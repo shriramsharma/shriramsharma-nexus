@@ -20,6 +20,8 @@ RUN tar xvf /usr/local/nexus*.gz -C /usr/local/nexusdir
 
 RUN echo "export RUN_AS_USER=root" >> /etc/bash.bashrc
 
+ENV RUN_AS_USER root
+
 ADD run.sh /
 
 EXPOSE 8081
